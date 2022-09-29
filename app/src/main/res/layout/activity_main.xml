@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="224dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="Enter Your Height (IN)"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="228dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="136dp"
+        android:ems="10"
+        android:hint="Enter Your Weight (LB)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHeight"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="472dp"
+        android:text="Calculate BMI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="226dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etWeight"
+        app:layout_constraintVertical_bias="0.438" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
